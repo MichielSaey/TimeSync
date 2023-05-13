@@ -8,7 +8,7 @@ logger = logging.getLogger(__name__)
 
 class ClickUpService(ClickUp):
     def __init__(self):
-        super().__init__(os.environ.get("CLICKUP_TOKEN"))
+        super().__init__(os.environ["CLICKUP_API_KEY"])
 
     def get_all_tasks(self):
         """
