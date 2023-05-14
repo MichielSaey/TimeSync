@@ -18,3 +18,5 @@ def initialize_logging():  # pragma: no cover
         os.getenv("LOGGING_LEVEL", "INFO")
     )
     logging.getLogger(__name__).propagate = True
+
+
